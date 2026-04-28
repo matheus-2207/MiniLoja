@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/MiniLoja">
       <div className="app">
         <Navbar user={user} onLogout={handleLogout} cart={cart} removeFromCart={removeFromCart} clearCart={clearCart} />
         <main className="container" style={{ padding: '40px 20px' }}>

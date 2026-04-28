@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_URL } from '../config';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { Trash2, PlusCircle, Pencil, XCircle } from 'lucide-react';
 import './AdminDashboard.css';
@@ -20,8 +21,8 @@ export default function AdminDashboard() {
   const fetchData = async () => {
     try {
       const [statsRes, prodRes] = await Promise.all([
-        axios.get('http://localhost:3000/api/admin/stats/monthly', { headers }),
-        axios.get('http://localhost:3000/api/products')
+        axios.get(`${API_URL}/api/admin/stats/monthly`, { headers }),
+        axios.get(`${API_URL}/api/products`)
       ]);
       setStats(statsRes.data);
       setProducts(prodRes.data);
@@ -34,13 +35,13 @@ export default function AdminDashboard() {
     e.preventDefault();
     try {
       if (editMode) {
-        await axios.put(`http://localhost:3000/api/products/${editMode}`, {
+        await axios.put(`${API_URL}/api/products/${editMode}`, {
           ...newProduct,
           price: parseFloat(newProduct.price)
         }, { headers });
         setEditMode(null);
       } else {
-        await axios.post('http://localhost:3000/api/products', {
+        await axios.post(`${API_URL}/api/products`, {
           ...newProduct,
           price: parseFloat(newProduct.price)
         }, { headers });
@@ -68,7 +69,7 @@ export default function AdminDashboard() {
   const handleDeleteProduct = async (id) => {
     if (!window.confirm('Certeza que deseja deletar este produto?')) return;
     try {
-      await axios.delete(`http://localhost:3000/api/products/${id}`, { headers });
+      await axios.delete(`${API_URL}/api/products/${id}`, { headers });
       fetchData();
     } catch (error) {
       console.error('Erro ao deletar produto', error);

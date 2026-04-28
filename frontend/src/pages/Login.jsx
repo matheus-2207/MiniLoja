@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { API_URL } from '../config';
 import './Login.css';
 
 export default function Login({ onLogin }) {
@@ -17,11 +18,11 @@ export default function Login({ onLogin }) {
     
     try {
       const endpoint = isRegister ? '/api/register' : '/api/login';
-      const response = await axios.post(`http://localhost:3000${endpoint}`, formData);
+      const response = await axios.post(`${API_URL}${endpoint}`, formData);
       
       if (isRegister) {
         // Auto login after register
-        const loginRes = await axios.post('http://localhost:3000/api/login', {
+        const loginRes = await axios.post(`${API_URL}/api/login`, {
           email: formData.email,
           password: formData.password
         });

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { API_URL } from '../config';
 import './Profile.css';
 
 export default function Profile({ user, setUser }) {
@@ -25,7 +26,7 @@ export default function Profile({ user, setUser }) {
     
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.put('http://localhost:3000/api/profile', formData, {
+      const response = await axios.put(`${API_URL}/api/profile`, formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       
