@@ -24,8 +24,10 @@
   color: var(--text-main);
 }
 
-.navbar-logo .logo-icon {
-  color: var(--primary-color);
+.navbar-logo .logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .navbar-actions {

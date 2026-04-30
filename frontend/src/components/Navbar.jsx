@@ -51,7 +51,7 @@ export default function Navbar({ user, onLogout, cart = [], removeFromCart, clea
       <nav className="navbar">
         <div className="container navbar-container">
           <Link to="/" className="navbar-logo">
-            <Dumbbell className="logo-icon" />
+            <img src="./images/logo.png" alt="PowerSupps Logo" className="logo-img" />
             <span>PowerSupps</span>
           </Link>
           

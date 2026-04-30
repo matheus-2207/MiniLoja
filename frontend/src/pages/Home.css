@@ -16,6 +16,13 @@
   gap: 20px;
 }
 
+.hero-logo {
+  height: 120px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 15px rgba(249, 115, 22, 0.4));
+}
+
 .hero-section h1 {
   font-size: 3rem;
   max-width: 800px;

@@ -31,6 +31,7 @@ export default function Home({ addToCart }) {
   return (
     <div className="home-page">
       <header className="hero-section text-center">
+        <img src="./images/logo.png" alt="PowerSupps Logo" className="hero-logo" />
         <h1>Alcance seus resultados com a <span className="text-primary">PowerSupps</span></h1>
         <p className="hero-subtitle">Os melhores suplementos com qualidade comprovada para o seu treino.</p>
         
