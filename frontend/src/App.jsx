@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -48,7 +48,7 @@ function App() {
   };
 
   return (
-    <Router basename="/MiniLoja">
+    <Router>
       <div className="app">
         <Navbar user={user} onLogout={handleLogout} cart={cart} removeFromCart={removeFromCart} clearCart={clearCart} />
         <main className="container" style={{ padding: '40px 20px' }}>
