@@ -68,9 +68,9 @@ const db = new sqlite3.Database(dbPath, (err) => {
       db.get("SELECT COUNT(*) AS count FROM products", (err, row) => {
         if (row && row.count === 0) {
           const stmt = db.prepare("INSERT INTO products (name, category, price, description, image_url) VALUES (?, ?, ?, ?, ?)");
-          stmt.run('Whey Protein Concentrado 1KG', 'Whey', 109.90, 'Suplemento proteico para ganho de massa muscular.', 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&auto=format&fit=crop');
-          stmt.run('Creatina Monohidratada 300g', 'Creatina', 89.90, 'Auxilia no aumento do desempenho físico.', 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&auto=format&fit=crop');
-          stmt.run('Pré Treino Insane', 'Pre Treino', 149.90, 'Energia extrema para seus treinos.', 'https://images.unsplash.com/photo-1541534741688-6078c64b52d3?w=500&auto=format&fit=crop');
+          stmt.run('Whey Protein Concentrado 1KG', 'Whey', 109.90, 'Suplemento proteico para ganho de massa muscular.', './images/whey.png');
+          stmt.run('Creatina Monohidratada 300g', 'Creatina', 89.90, 'Auxilia no aumento do desempenho físico.', './images/creatina.png');
+          stmt.run('Pré Treino Insane', 'Pre Treino', 149.90, 'Energia extrema para seus treinos.', './images/pre_treino.png');
           stmt.finalize();
           
           // Seed fake sales for graphics
@@ -181,7 +181,7 @@ app.get('/api/products', (req, res) => {
 app.post('/api/products', authenticate, isAdmin, (req, res) => {
   const { name, category, price, description, image_url } = req.body;
   db.run("INSERT INTO products (name, category, price, description, image_url) VALUES (?, ?, ?, ?, ?)", 
-    [name, category, price, description, image_url || 'https://images.unsplash.com/photo-1579722820308-d74e5719d38e?w=500&auto=format&fit=crop'], function(err) {
+    [name, category, price, description, image_url || './images/logo.png'], function(err) {
     if (err) return res.status(500).json({ error: err.message });
     res.json({ id: this.lastID, name, category, price });
   });
@@ -191,7 +191,7 @@ app.put('/api/products/:id', authenticate, isAdmin, (req, res) => {
   const { name, category, price, description, image_url } = req.body;
   const id = req.params.id;
   db.run("UPDATE products SET name = ?, category = ?, price = ?, description = ?, image_url = ? WHERE id = ?", 
-    [name, category, price, description, image_url || 'https://images.unsplash.com/photo-1579722820308-d74e5719d38e?w=500&auto=format&fit=crop', id], function(err) {
+    [name, category, price, description, image_url || './images/logo.png', id], function(err) {
     if (err) return res.status(500).json({ error: err.message });
     res.json({ message: 'Produto atualizado' });
   });
