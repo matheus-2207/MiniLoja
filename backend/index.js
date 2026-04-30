@@ -85,6 +85,11 @@ const db = new sqlite3.Database(dbPath, (err) => {
           db.run("INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (3, 2, 1, 89.90)");
           db.run("INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (4, 3, 1, 149.90)");
           db.run("INSERT INTO order_items (order_id, product_id, quantity, price) VALUES (4, 2, 1, 89.90)");
+        } else {
+          // Migration: Update existing products to use new local images
+          db.run("UPDATE products SET image_url = './images/whey.png' WHERE name LIKE '%Whey%' AND (image_url LIKE '%unsplash%' OR image_url LIKE '%via.placeholder%')");
+          db.run("UPDATE products SET image_url = './images/creatina.png' WHERE name LIKE '%Creatina%' AND (image_url LIKE '%unsplash%' OR image_url LIKE '%via.placeholder%')");
+          db.run("UPDATE products SET image_url = './images/pre_treino.png' WHERE name LIKE '%Treino%' AND (image_url LIKE '%unsplash%' OR image_url LIKE '%via.placeholder%')");
         }
       });
     });
