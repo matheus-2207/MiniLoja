@@ -1,0 +1,2 @@
+# Este arquivo diz ao GitHub Pages para não usar o Jekyll para processar o site.
+# Isso é necessário para que arquivos que começam com sublinhado (como os do Vite) sejam carregados.
