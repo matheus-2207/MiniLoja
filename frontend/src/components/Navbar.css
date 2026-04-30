@@ -20,13 +20,15 @@
   gap: 12px;
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--text-main);
 }
 
 .navbar-logo .logo-img {
-  height: 32px;
+  height: 50px;
   width: auto;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
 .navbar-actions {
