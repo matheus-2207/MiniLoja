@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Eye, EyeOff } from 'lucide-react';
 import { API_URL } from '../config';
 import './Login.css';
 
 export default function Login({ onLogin }) {
   const [isRegister, setIsRegister] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', password: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
 
   const handleChange = (e) => {
@@ -15,6 +18,11 @@ export default function Login({ onLogin }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+
+    if (isRegister && formData.password !== formData.confirmPassword) {
+      setError('As senhas não coincidem');
+      return;
+    }
     
     try {
       const endpoint = isRegister ? '/api/register' : '/api/login';
@@ -69,14 +77,45 @@ export default function Login({ onLogin }) {
           
           <div className="form-group">
             <label>Senha</label>
-            <input 
-              type="password" 
-              name="password" 
-              value={formData.password} 
-              onChange={handleChange} 
-              required 
-            />
+            <div className="password-input-wrapper">
+              <input 
+                type={showPassword ? "text" : "password"} 
+                name="password" 
+                value={formData.password} 
+                onChange={handleChange} 
+                required 
+              />
+              <button 
+                type="button" 
+                className="btn-eye" 
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
+            </div>
           </div>
+
+          {isRegister && (
+            <div className="form-group">
+              <label>Confirmar Senha</label>
+              <div className="password-input-wrapper">
+                <input 
+                  type={showConfirmPassword ? "text" : "password"} 
+                  name="confirmPassword" 
+                  value={formData.confirmPassword} 
+                  onChange={handleChange} 
+                  required 
+                />
+                <button 
+                  type="button" 
+                  className="btn-eye" 
+                  onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                >
+                  {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+                </button>
+              </div>
+            </div>
+          )}
           
           <button type="submit" className="btn-primary w-full mt-4">
             {isRegister ? 'Cadastrar' : 'Entrar'}
