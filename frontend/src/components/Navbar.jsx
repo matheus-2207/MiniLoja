@@ -52,6 +52,7 @@ export default function Navbar({ user, onLogout, cart = [], removeFromCart, clea
         <div className="container navbar-container">
           <Link to="/" className="navbar-logo">
             <img src="./images/logo.png" alt="PowerSupps Logo" className="logo-img" />
+            <span>PowerSupps</span>
           </Link>
           
           <div className="navbar-actions">
