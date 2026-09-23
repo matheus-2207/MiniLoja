@@ -1,17 +1,22 @@
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/outfit/800.css";
 :root {
-  --bg-color: #0f172a;
-  --surface-color: #1e293b;
-  --surface-hover: #334155;
-  --primary-color: #f97316;
+  --bg-color: #0a0c09;
+  --surface-color: #171b14;
+  --surface-hover: #343c2c;
+  --primary-color: #c0f65a;
   /* Orange */
-  --primary-hover: #ea580c;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --primary-hover: #d1ff7c;
+  --text-main: #f1f3ec;
+  --text-muted: #a0aa94;
   --danger: #ef4444;
   --success: #22c55e;
-  --border-color: #334155;
+  --border-color: #343c2c;
 
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Outfit", sans-serif;
   color-scheme: dark;
   background-color: var(--bg-color);
   color: var(--text-main);
@@ -37,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -52,8 +57,11 @@ a:hover {
   color: var(--primary-hover);
 }
 
-button, .btn-primary, .btn-secondary, .btn-danger {
-  font-family: 'Inter', sans-serif;
+button,
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -75,7 +83,7 @@ button, .btn-primary, .btn-secondary, .btn-danger {
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
@@ -100,7 +108,7 @@ button, .btn-primary, .btn-secondary, .btn-danger {
 input,
 select,
 textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   color: var(--text-main);
@@ -114,7 +122,7 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 0 0 2px rgba(192, 246, 90, 0.2);
 }
 
 .container {
@@ -124,7 +132,7 @@ textarea:focus {
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.7);
+  background: rgba(27, 32, 22, 0.7);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -166,4 +174,62 @@ textarea:focus {
 
 .w-full {
   width: 100%;
+}
+:root {
+  scroll-behavior: auto;
+  scrollbar-color: #455137 #0a0c09;
+}
+::selection {
+  background: #c0f65a;
+  color: #17200f;
+}
+:focus-visible {
+  outline: 2px solid #c0f65a;
+  outline-offset: 5px;
+}
+.btn-primary {
+  color: #17200f;
+}
+.btn-primary:hover {
+  box-shadow: none;
+}
+.app-main {
+  min-height: 70vh;
+}
+.app-main:has(.home-page) {
+  padding: 0;
+}
+.app-main:not(:has(.home-page)) {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 2000;
+  background: #c0f65a;
+  color: #17200f;
+  padding: 12px 20px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+button,
+a,
+input,
+summary {
+  touch-action: manipulation;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

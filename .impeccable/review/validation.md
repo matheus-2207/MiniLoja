@@ -1,0 +1,11 @@
+# Validation
+- Production build passed.
+- ESLint passed for App, Navbar, Home, ProductScene.
+- Full repository lint has a pre-existing AdminDashboard fetchData hook/definition issue, unrelated to this redesign.
+- API started locally; real seeded catalog loaded.
+- Two-unit creatina kit adds two units; cart total verified at R$179.80. Removal verified.
+- Offline state inspected; labeled preview, purchase controls disabled, retry available.
+- Real WebGL canvas rendered; initial label orientation corrected during first visual pass.
+- Responsive 390px width: 2px glow overflow discovered and clipped.
+- 60fps across physical mobile devices has not been measured. Scene renders on changes, pixel ratio capped, offscreen rendering suspended.
+- Impeccable auxiliary engine unavailable; no detector output. No approved image comp: user supplied pinned brief and requested code.

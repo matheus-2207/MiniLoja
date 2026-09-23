@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T23:02:49.000695+00:00",
+  "title": "Design System: PowerSupps",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "tonalRamp": [
+          "oklch(15.00% 0.1904 126.27)",
+          "oklch(26.43% 0.1904 126.27)",
+          "oklch(37.86% 0.1904 126.27)",
+          "oklch(49.29% 0.1904 126.27)",
+          "oklch(60.71% 0.1904 126.27)",
+          "oklch(72.14% 0.1904 126.27)",
+          "oklch(83.57% 0.1904 126.27)",
+          "oklch(95.00% 0.1904 126.27)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.1664 125.49)",
+          "oklch(26.43% 0.1664 125.49)",
+          "oklch(37.86% 0.1664 125.49)",
+          "oklch(49.29% 0.1664 125.49)",
+          "oklch(60.71% 0.1664 125.49)",
+          "oklch(72.14% 0.1664 125.49)",
+          "oklch(83.57% 0.1664 125.49)",
+          "oklch(95.00% 0.1664 125.49)"
+        ]
+      },
+      "cta-hover": {
+        "role": "primary",
+        "displayName": "Cta Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.1641 125.34)",
+          "oklch(26.43% 0.1641 125.34)",
+          "oklch(37.86% 0.1641 125.34)",
+          "oklch(49.29% 0.1641 125.34)",
+          "oklch(60.71% 0.1641 125.34)",
+          "oklch(72.14% 0.1641 125.34)",
+          "oklch(83.57% 0.1641 125.34)",
+          "oklch(95.00% 0.1641 125.34)"
+        ]
+      },
+      "neutral-bg": {
+        "role": "neutral",
+        "displayName": "Neutral Bg",
+        "tonalRamp": [
+          "oklch(15.00% 0.0072 134.82)",
+          "oklch(26.43% 0.0072 134.82)",
+          "oklch(37.86% 0.0072 134.82)",
+          "oklch(49.29% 0.0072 134.82)",
+          "oklch(60.71% 0.0072 134.82)",
+          "oklch(72.14% 0.0072 134.82)",
+          "oklch(83.57% 0.0072 134.82)",
+          "oklch(95.00% 0.0072 134.82)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0147 131.88)",
+          "oklch(26.43% 0.0147 131.88)",
+          "oklch(37.86% 0.0147 131.88)",
+          "oklch(49.29% 0.0147 131.88)",
+          "oklch(60.71% 0.0147 131.88)",
+          "oklch(72.14% 0.0147 131.88)",
+          "oklch(83.57% 0.0147 131.88)",
+          "oklch(95.00% 0.0147 131.88)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Surface Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.0291 129.45)",
+          "oklch(26.43% 0.0291 129.45)",
+          "oklch(37.86% 0.0291 129.45)",
+          "oklch(49.29% 0.0291 129.45)",
+          "oklch(60.71% 0.0291 129.45)",
+          "oklch(72.14% 0.0291 129.45)",
+          "oklch(83.57% 0.0291 129.45)",
+          "oklch(95.00% 0.0291 129.45)"
+        ]
+      },
+      "text-main": {
+        "role": "neutral",
+        "displayName": "Text Main",
+        "tonalRamp": [
+          "oklch(15.00% 0.0095 119.58)",
+          "oklch(26.43% 0.0095 119.58)",
+          "oklch(37.86% 0.0095 119.58)",
+          "oklch(49.29% 0.0095 119.58)",
+          "oklch(60.71% 0.0095 119.58)",
+          "oklch(72.14% 0.0095 119.58)",
+          "oklch(83.57% 0.0095 119.58)",
+          "oklch(95.00% 0.0095 119.58)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.0330 127.20)",
+          "oklch(26.43% 0.0330 127.20)",
+          "oklch(37.86% 0.0330 127.20)",
+          "oklch(49.29% 0.0330 127.20)",
+          "oklch(60.71% 0.0330 127.20)",
+          "oklch(72.14% 0.0330 127.20)",
+          "oklch(83.57% 0.0330 127.20)",
+          "oklch(95.00% 0.0330 127.20)"
+        ]
+      },
+      "home-muted": {
+        "role": "neutral",
+        "displayName": "Home Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.0103 119.66)",
+          "oklch(26.43% 0.0103 119.66)",
+          "oklch(37.86% 0.0103 119.66)",
+          "oklch(49.29% 0.0103 119.66)",
+          "oklch(60.71% 0.0103 119.66)",
+          "oklch(72.14% 0.0103 119.66)",
+          "oklch(83.57% 0.0103 119.66)",
+          "oklch(95.00% 0.0103 119.66)"
+        ]
+      },
+      "display-white": {
+        "role": "neutral",
+        "displayName": "Display White",
+        "tonalRamp": [
+          "oklch(15.00% 0.0079 106.55)",
+          "oklch(26.43% 0.0079 106.55)",
+          "oklch(37.86% 0.0079 106.55)",
+          "oklch(49.29% 0.0079 106.55)",
+          "oklch(60.71% 0.0079 106.55)",
+          "oklch(72.14% 0.0079 106.55)",
+          "oklch(83.57% 0.0079 106.55)",
+          "oklch(95.00% 0.0079 106.55)"
+        ]
+      },
+      "cta-ink": {
+        "role": "neutral",
+        "displayName": "Cta Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0432 130.25)",
+          "oklch(26.43% 0.0432 130.25)",
+          "oklch(37.86% 0.0432 130.25)",
+          "oklch(49.29% 0.0432 130.25)",
+          "oklch(60.71% 0.0432 130.25)",
+          "oklch(72.14% 0.0432 130.25)",
+          "oklch(83.57% 0.0432 130.25)",
+          "oklch(95.00% 0.0432 130.25)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.0291 129.45)",
+          "oklch(26.43% 0.0291 129.45)",
+          "oklch(37.86% 0.0291 129.45)",
+          "oklch(49.29% 0.0291 129.45)",
+          "oklch(60.71% 0.0291 129.45)",
+          "oklch(72.14% 0.0291 129.45)",
+          "oklch(83.57% 0.0291 129.45)",
+          "oklch(95.00% 0.0291 129.45)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15.00% 0.2078 25.33)",
+          "oklch(26.43% 0.2078 25.33)",
+          "oklch(37.86% 0.2078 25.33)",
+          "oklch(49.29% 0.2078 25.33)",
+          "oklch(60.71% 0.2078 25.33)",
+          "oklch(72.14% 0.2078 25.33)",
+          "oklch(83.57% 0.2078 25.33)",
+          "oklch(95.00% 0.2078 25.33)"
+        ]
+      },
+      "success": {
+        "role": "neutral",
+        "displayName": "Success",
+        "tonalRamp": [
+          "oklch(15.00% 0.1920 149.58)",
+          "oklch(26.43% 0.1920 149.58)",
+          "oklch(37.86% 0.1920 149.58)",
+          "oklch(49.29% 0.1920 149.58)",
+          "oklch(60.71% 0.1920 149.58)",
+          "oklch(72.14% 0.1920 149.58)",
+          "oklch(83.57% 0.1920 149.58)",
+          "oklch(95.00% 0.1920 149.58)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero statement."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Catalog product titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Hero supporting copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tracked metadata."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Primary home CTA."
+      }
+    },
+    "shadows": [
+      {
+        "name": "cart-drawer",
+        "value": "-10px 0 30px rgba(0, 0, 0, 0.5)",
+        "purpose": "Separate the modal drawer from the page."
+      },
+      {
+        "name": "input-focus",
+        "value": "0 0 0 2px rgba(192, 246, 90, 0.2)",
+        "purpose": "Supplement keyboard outline on form fields."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "0.2s ease",
+        "purpose": "Shared button states."
+      },
+      {
+        "name": "product-image-hover",
+        "value": "0.45s cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "Catalog image scale to 1.04."
+      },
+      {
+        "name": "drawer-enter",
+        "value": "0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Slide the cart from the right."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "1050px"
+      },
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary CTA",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary CTA extracted from the implemented storefront.",
+      "html": "<button class=\"ds-primary\">Explorar produtos <span aria-hidden=\"true\">↗</span></button>",
+      "css": ".ds-primary{font-family:Outfit,sans-serif;cursor:pointer;transition:background .2s,transform .2s;display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-height:52px;border:0;border-radius:6px;padding:15px 22px;font-size:14px;font-weight:600;background:var(--primary-color,#c0f65a);color:#17220b}.ds-primary:hover{background:#d2ff7e;color:#111;transform:translateY(-2px)}.ds-primary:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}.ds-primary:disabled{opacity:.45;cursor:not-allowed;transform:none}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary CTA",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary CTA extracted from the implemented storefront.",
+      "html": "<button class=\"ds-secondary\">Escolher kit</button>",
+      "css": ".ds-secondary{font-family:Outfit,sans-serif;cursor:pointer;transition:background .2s,transform .2s;min-height:52px;border:1px solid #48513e;border-radius:6px;padding:15px 22px;font-size:14px;font-weight:600;background:transparent;color:#e3e8db}.ds-secondary:hover{background:#2c3821}.ds-secondary:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Text field extracted from the implemented storefront.",
+      "html": "<label class=\"ds-label\">E-mail<input class=\"ds-input\" type=\"email\" placeholder=\"voce@exemplo.com\"></label>",
+      "css": ".ds-label{display:grid;gap:8px;font:13px Outfit,sans-serif;color:var(--text-main,#f1f3ec)}.ds-input{font:14px Outfit,sans-serif;background:var(--bg-color,#0a0c09);color:var(--text-main,#f1f3ec);border:1px solid var(--border-color,#343c2c);border-radius:8px;padding:12px 16px;transition:border-color .3s ease}.ds-input:hover{border-color:var(--border-color,#343c2c)}.ds-input:focus{border-color:var(--primary-color,#c0f65a);box-shadow:0 0 0 2px rgba(192,246,90,.2)}.ds-input:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}"
+    },
+    {
+      "name": "Category chip",
+      "kind": "chip",
+      "refersTo": "category-chip",
+      "description": "Category chip extracted from the implemented storefront.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"false\">Creatina</button>",
+      "css": ".ds-chip{font-family:Outfit,sans-serif;cursor:pointer;transition:background .2s,transform .2s;background:transparent;color:#9ea495;border:1px solid #30352a;font-size:11px;padding:10px 17px;border-radius:4px;font-weight:600}.ds-chip:hover{background:transparent}.ds-chip[aria-pressed=\"true\"]{background:var(--primary-color,#c0f65a);color:#1b270d;border-color:var(--primary-color,#c0f65a)}.ds-chip:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}"
+    },
+    {
+      "name": "Selected category chip",
+      "kind": "chip",
+      "refersTo": "category-chip-selected",
+      "description": "Selected category chip extracted from the implemented storefront.",
+      "html": "<button class=\"ds-selected\" aria-pressed=\"true\">Todos</button>",
+      "css": ".ds-selected{font-family:Outfit,sans-serif;cursor:pointer;transition:background .2s,transform .2s;background:var(--primary-color,#c0f65a);color:#1b270d;border:1px solid var(--primary-color,#c0f65a);font-size:11px;padding:10px 17px;border-radius:4px;font-weight:600}.ds-selected:hover{background:var(--primary-color,#c0f65a)}.ds-selected:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Navigation extracted from the implemented storefront.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-brand\" href=\"#\">Power<span>Supps</span></a><a href=\"#produtos\">Produtos</a><a href=\"#faq\">Dúvidas</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:31px;padding:21px 22px;background:#0a0c09ee;border-bottom:1px solid #272c22;backdrop-filter:blur(16px);font-family:Outfit,sans-serif}.ds-nav a{font-size:11px;color:#aeb5a4;text-decoration:none}.ds-nav .ds-brand{font-size:29px;font-weight:600;letter-spacing:-.04em;color:var(--text-main,#f1f3ec);margin-right:auto}.ds-brand span,.ds-nav a:hover{color:var(--primary-color,#c0f65a)}.ds-nav a:focus-visible{outline:2px solid var(--primary-color,#c0f65a);outline-offset:5px}"
+    },
+    {
+      "name": "Kit card",
+      "kind": "card",
+      "refersTo": "kit-card",
+      "description": "Kit card extracted from the implemented storefront.",
+      "html": "<article class=\"ds-kit\"><div>01</div><h3>Seu primeiro pote</h3><p>Creatina Monohidratada 300 g</p><small>Preço disponível no catálogo</small></article>",
+      "css": ".ds-kit{font-family:Outfit,sans-serif;color:var(--text-main,#f1f3ec);padding:30px 25px 23px;border:1px solid #35392f;border-radius:10px}.ds-kit>div{font-size:40px;font-weight:500;color:#dfe6d5}.ds-kit h3{font-size:20px;font-weight:500;letter-spacing:-.02em;margin:20px 0 0}.ds-kit p{font-size:12px;color:#9c9e97;line-height:1.7;margin:8px 0 20px}.ds-kit small{font-size:11px;color:#c2d0ad}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Dark sports-product studio",
+    "overview": "A dark sports-product studio frames PowerSupps through geometric off-white type, electric lime actions and directly inspectable packaging. The atmosphere is premium and restrained: large editorial statements, muted supporting copy and thin rules leave room for the product.\n\nThe defining object is a realtime lit creatine jar with a ribbed lid and printed label. Its tactile appearance is an illustrative concept, not evidence of a supplied production package or certified formulation.",
+    "keyCharacteristics": [
+      "Dark olive-black surfaces and off-white Outfit typography.",
+      "Electric lime for product identity, primary actions and selected states.",
+      "Spacious editorial composition with compact controls and thin dividers.",
+      "Direct manipulation with keyboard controls and reduced-motion support."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve Portuguese storefront language and clear product identity.",
+      "Do use actual API prices and visibly label any offline preview with purchasing disabled.",
+      "Do keep the conceptual packaging disclosure visible near the 3D scene.",
+      "Do preserve search, category filters, cart, account routes, focus indicators and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't invent verified testimonials, lab reports, ingredient claims, scarcity or free-shipping benefits.",
+      "Don't treat conceptual packaging as the final ingredient label.",
+      "Don't replace the current restrained studio palette with unrelated accent families or decorative UI gradients.",
+      "Don't imply that the demonstration checkout processes payment."
+    ]
+  }
+}
